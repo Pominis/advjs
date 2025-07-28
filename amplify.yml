@@ -1,3 +1,7 @@
+# This file is for Amplify Hosting.
+# It is used to build and deploy the project to Amplify Hosting.
+# It is not used to build and deploy the project to other platforms.
+# It is not used to build and deploy the project to other platforms.
 version: 1
 applications:
   - frontend:
@@ -26,7 +30,6 @@ applications:
           commands:
             - node --version
             - corepack enable
-            # - pnpm install --filter @advjs/playground @advjs/client @advjs/core
             - pnpm install
         build:
           commands:
